@@ -1,0 +1,30 @@
+# --- Environment & Credentials ---
+.env
+.env.local
+.env.*.local
+config.local.php
+*.log
+
+# --- Dependencies ---
+# Explicitly ignore Vendor, but keep composer files
+vendor/
+
+# --- OS & System Files ---
+.DS_Store
+Thumbs.db
+.Spotlight-V100
+.Trashes
+
+# --- IDE & Editor Configs ---
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# --- Uploads & Dynamic Assets ---
+# Uncomment the line below if users upload files to your server
+# uploads/
+
