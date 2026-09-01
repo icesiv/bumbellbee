@@ -1,0 +1,38 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /
+
+    # Redirect .php files to friendly clean URLs
+    RewriteCond %{THE_REQUEST} \s/index(?:\.php)?[\s?] [NC]
+    RewriteRule ^ / [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/aboutus(?:\.php)?[\s?] [NC]
+    RewriteRule ^ about-us [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/package(?:\.php)?[\s?] [NC]
+    RewriteRule ^ packages [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/payment(?:\.php)?[\s?] [NC]
+    RewriteRule ^ payment [R=301,L]
+
+    RewriteCond %{THE_REQUEST} \s/contactus(?:\.php)?[\s?] [NC]
+    RewriteRule ^ contact-us [R=301,L]
+
+    # Friendly URL mappings
+    RewriteRule ^home/?$ index.php [L,QSA]
+    RewriteRule ^packages/?$ package.php [L,QSA]
+    RewriteRule ^package/?$ package.php [L,QSA]
+    RewriteRule ^payment/?$ payment.php [L,QSA]
+    RewriteRule ^payments/?$ payment.php [L,QSA]
+    RewriteRule ^about-us/?$ aboutus.php [L,QSA]
+    RewriteRule ^about/?$ aboutus.php [L,QSA]
+    RewriteRule ^contact-us/?$ contactus.php [L,QSA]
+    RewriteRule ^contact/?$ contactus.php [L,QSA]
+    RewriteRule ^contacts/?$ contactus.php [L,QSA]
+
+    # Fallback to .php file if exists
+    RewriteCond %{REQUEST_FILENAME} !-d
+    RewriteCond %{REQUEST_FILENAME} !-f
+    RewriteCond %{REQUEST_FILENAME}.php -f
+    RewriteRule ^([^\.]+)$ $1.php [NC,L]
+</IfModule>

@@ -6,14 +6,14 @@
                 <div class="section-heading">
                     <h3>Contact with us</h3>
                     <p>Bumbellbee Limited is a service firm. One of the important services of our is to provide TV channel cable services through HD set top box.</p>
-                    <p>Bumbellbee Limited is a sister concern of <a class="red-text" href="">ABG Bashundhara Group.</a></p>
+                    <p>Bumbellbee Limited is a sister concern of <a class="red-text" href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer">Anvir Bashundhara Group.</a></p>
                 </div>
                 <div class="footer-adderss">
                     <h6>Head Office</h6>
                     <p>Bumbellbee Ltd.
-                        Badar Height, 8th Floor
-                        Plot # 262 & 263, Main Road, Block-B
-                        Bashundhara R/A,Dhaka-1229, Bangladesh</p>
+                        ABG Tower
+                        Plot# 440, 441 & 442, Road – 18, Block# A
+                        Bashundhara R/A, Dhaka-1229, Bangladesh</p>
                     <ul>
                         <li>
                             <i class="fas fa-phone-alt phone-icon"></i>
