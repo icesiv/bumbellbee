@@ -1,7 +1,7 @@
-<?php 
+<?php
 require_once __DIR__ . '/includes/seo.php';
 $pageSeo = getSeoConfig('packages');
-include "layouts/header.php"; 
+include "layouts/header.php";
 ?>
 
 <!-- Custom Package & Channel Explorer Styles -->
@@ -12,14 +12,7 @@ include "layouts/header.php";
 
         <!-- Hero Header -->
         <div class="package-hero">
-            <div class="badge-pill-custom">
-                <i class="fas fa-tv"></i> Digital HD Television Packages
-            </div>
             <h1>Choose Your Ideal Cable TV Package</h1>
-            <p class="lead-text">
-                Experience crystal-clear high definition broadcast, dynamic surround sound, and uncompressed fiber
-                signal stability with Bumbellbee's digital HD Set-Top Box packages.
-            </p>
         </div>
 
         <!-- 1. Package Tier Comparison Grid -->
@@ -116,7 +109,9 @@ include "layouts/header.php";
         <div class="channel-explorer-card" id="channel-explorer">
             <div class="explorer-header">
                 <div class="explorer-title">
-                    <h2 id="currentPackTitle" style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">Standard Package Channel Lineup</h2>
+                    <h2 id="currentPackTitle"
+                        style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">Standard Package
+                        Channel Lineup</h2>
                     <p id="currentPackSubtitle">Browse all supported channels with official logos, SIDs, and categories.
                     </p>
                 </div>

@@ -1,7 +1,7 @@
-<?php 
+<?php
 require_once __DIR__ . '/includes/seo.php';
 $pageSeo = getSeoConfig('about');
-include "layouts/header.php"; 
+include "layouts/header.php";
 ?>
 
 <!-- Custom About Us Page Styles -->
@@ -12,24 +12,14 @@ include "layouts/header.php";
 
         <!-- Hero Header -->
         <div class="about-hero">
-            <div class="badge-pill-custom">
-                <i class="fas fa-satellite-dish"></i> Next-Generation Digital Cable &amp; HD Entertainment
-            </div>
             <h1>Empowering Households with Crystal-Clear Digital Entertainment</h1>
-            <p class="lead-text">
-                Bumbellbee Limited is a premier digital media and cable service provider. A proud sister concern of
-                <strong><a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer"
-                        class="red-text font-weight-bold">Anvir Bashundhara Group</a></strong>, we are committed to
-                elevating your home viewing experience with
-                cutting-edge HD Set-Top Box technology, ultra-fast support, and unmatched signal clarity.
-            </p>
         </div>
 
-        <!-- Section 1: Who We Are & Technology (Redesigned Split Showcase) -->
+        <!-- Section 1: Who We Are & Technology (Full Card Background Showcase) -->
         <div class="about-section-card who-we-are-card">
             <div class="row align-items-center">
-                <!-- Left Column: Story & Feature Highlights -->
-                <div class="col-lg-6 mb-5 mb-lg-0">
+                <!-- Left Column: Story & Narrative -->
+                <div class="col-lg-6 mb-4 mb-lg-0">
                     <span class="badge-pill-custom">
                         <i class="fas fa-bullseye"></i> Who We Are
                     </span>
@@ -37,20 +27,28 @@ include "layouts/header.php";
                         Revolutionizing <span class="highlight-orange">Digital Cable TV</span> in Bangladesh
                     </h2>
                     <p class="about-p">
-                        <strong>Bumbellbee Limited</strong> is a forward-thinking digital media and telecommunications service firm dedicated to bringing pristine, uninterrupted television entertainment directly to your living room.
+                        <strong>Bumbellbee Limited</strong> is a forward-thinking digital media and telecommunications
+                        service firm dedicated to bringing pristine, uninterrupted television entertainment directly to
+                        your living room.
                     </p>
                     <p class="about-p">
-                        As a proud member of <strong><a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer" class="red-text font-weight-bold">Anvir Bashundhara Group</a></strong>, we harness high-capacity fiber-optic transmission lines, state-of-the-art broadcast encoders, and dedicated local technician hubs to provide an unmatched viewing experience.
+                        As a proud member of <strong><a href="https://www.abgbashundhara.com/" target="_blank"
+                                rel="noopener noreferrer" class="red-text font-weight-bold">Anvir Bashundhara
+                                Group</a></strong>, we harness high-capacity fiber-optic transmission lines,
+                        state-of-the-art broadcast encoders, and dedicated local technician hubs to provide an unmatched
+                        viewing experience.
                     </p>
+                </div>
 
-                    <!-- Feature Grid -->
-                    <div class="who-feature-grid mt-4">
+                <!-- Right Column: 4 Frosted Glass Feature Cards -->
+                <div class="col-lg-6">
+                    <div class="who-feature-grid">
                         <div class="who-feature-item">
                             <div class="who-feature-icon icon-hd">
                                 <i class="fas fa-tv"></i>
                             </div>
                             <div>
-                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">1080p &amp; 4K HD Quality</h3>
+                                <h3>1080p &amp; 4K HD Quality</h3>
                                 <p>Uncompressed digital feed with rich color fidelity and deep contrast.</p>
                             </div>
                         </div>
@@ -60,7 +58,7 @@ include "layouts/header.php";
                                 <i class="fas fa-project-diagram"></i>
                             </div>
                             <div>
-                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Fiber-Optic Backbone</h3>
+                                <h3>Fiber-Optic Backbone</h3>
                                 <p>Weather-resilient digital transmission ensuring 99.9% uptime.</p>
                             </div>
                         </div>
@@ -70,7 +68,7 @@ include "layouts/header.php";
                                 <i class="fas fa-list-alt"></i>
                             </div>
                             <div>
-                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Smart EPG Guide</h3>
+                                <h3>Smart EPG Guide</h3>
                                 <p>7-day electronic program guide with parental controls.</p>
                             </div>
                         </div>
@@ -80,39 +78,8 @@ include "layouts/header.php";
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div>
-                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Fast On-Site Support</h3>
+                                <h3>Fast On-Site Support</h3>
                                 <p>Prompt doorstep service from certified technicians during office hours.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- Right Column: Visual Frame with Floating Badges -->
-                <div class="col-lg-6">
-                    <div class="who-visual-showcase">
-                        <div class="who-media-frame">
-                            <img src="./img/about_hero.jpg" alt="Bumbellbee Digital Entertainment System" class="who-media-img" loading="lazy" decoding="async">
-                            
-                            <!-- Floating Badge 1: Quality -->
-                            <div class="who-floating-pill pill-top-right">
-                                <div class="pill-icon-circle bg-danger text-white">
-                                    <i class="fas fa-crown"></i>
-                                </div>
-                                <div>
-                                    <strong style="display:block; font-size:12.5px; color:#ffffff;">100+ HD Channels</strong>
-                                    <span style="font-size:11px; color:#cbd5e1;">Live Sports &amp; Blockbusters</span>
-                                </div>
-                            </div>
-
-                            <!-- Floating Badge 2: Audio & Tech -->
-                            <div class="who-floating-pill pill-bottom-left">
-                                <div class="pill-icon-circle bg-primary text-white">
-                                    <i class="fas fa-volume-up"></i>
-                                </div>
-                                <div>
-                                    <strong style="display:block; font-size:12.5px; color:#ffffff;">Dolby Surround Audio</strong>
-                                    <span style="font-size:11px; color:#cbd5e1;">Cinema-grade sound in every room</span>
-                                </div>
                             </div>
                         </div>
                     </div>
@@ -190,7 +157,9 @@ include "layouts/header.php";
                     <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
                         <span class="section-tag">Visionary Leadership</span>
                         <a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./img/abg_logo.png" alt="ABG Bashundhara Logo" style="height: 44px; width: auto; object-fit: contain;" loading="lazy" decoding="async" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
+                            <img src="./img/abg_logo.png" alt="ABG Bashundhara Logo"
+                                style="height: 44px; width: auto; object-fit: contain;" loading="lazy" decoding="async"
+                                onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
                         </a>
                     </div>
                     <h2 class="section-title">Pioneering Progress and Economic Empowerment</h2>
@@ -218,8 +187,9 @@ include "layouts/header.php";
                                 <i class="fas fa-user-tie"></i>
                             </div>
                             <div>
-                                <h3 class="leadership-name" style="font-size: 16px; margin-bottom: 2px;">Sayem Sobhan Anvir</h3>
-                                <span class="leadership-title">Managing Director, Bashundhara Group</span>
+                                <h3 class="leadership-name" style="font-size: 16px; margin-bottom: 2px;">Sayem Sobhan
+                                    Anvir</h3>
+                                <span class="leadership-title">Chairman, Anvir Bashundhara Group</span>
                             </div>
                         </div>
                     </div>
@@ -230,7 +200,8 @@ include "layouts/header.php";
         <!-- Section 5: Call to Action Banner -->
         <div class="about-cta-banner">
             <div class="about-cta-content">
-                <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 6px;">Ready to Experience Premium HD Entertainment?</h3>
+                <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 6px;">Ready to Experience Premium HD
+                    Entertainment?</h3>
                 <p>
                     Discover our flexible channel packages or explore instant payment options for seamless activation.
                 </p>

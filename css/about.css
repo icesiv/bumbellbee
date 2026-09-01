@@ -150,16 +150,57 @@
     -webkit-text-fill-color: transparent;
 }
 
-/* Who We Are Redesigned Feature Grid */
+/* Who We Are Full-Card Background Showcase */
+.who-we-are-card {
+    position: relative;
+    background-image: 
+        linear-gradient(135deg, rgba(11, 17, 32, 0.94) 0%, rgba(15, 23, 42, 0.88) 50%, rgba(24, 12, 6, 0.90) 100%),
+        url('../img/about_who_bg.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    border-radius: 24px;
+    border: 1px solid rgba(255, 255, 255, 0.12);
+    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.16);
+    color: #ffffff;
+    padding: 44px 38px;
+    overflow: hidden;
+}
+
+.who-we-are-card .section-title {
+    color: #ffffff;
+    font-size: 28px;
+    font-weight: 800;
+}
+
+.who-we-are-card .about-p {
+    color: #cbd5e1;
+    font-size: 15.5px;
+    line-height: 1.75;
+}
+
+.who-we-are-card .about-p strong {
+    color: #ffffff;
+}
+
+.who-we-are-card .badge-pill-custom {
+    background: rgba(244, 70, 22, 0.15);
+    border: 1px solid rgba(244, 70, 22, 0.4);
+    color: #ff8a65;
+}
+
+/* Who We Are Frosted Glass Feature Grid */
 .who-feature-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 14px;
 }
 
 .who-feature-item {
-    background: #f8fafc;
-    border: 1px solid #e2e8f0;
+    background: rgba(15, 23, 42, 0.68);
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+    border: 1px solid rgba(255, 255, 255, 0.12);
     border-radius: 14px;
     padding: 16px;
     display: flex;
@@ -169,10 +210,10 @@
 }
 
 .who-feature-item:hover {
-    background: #ffffff;
-    border-color: #cbd5e1;
+    background: rgba(15, 23, 42, 0.85);
+    border-color: rgba(244, 70, 22, 0.4);
     transform: translateY(-3px);
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
 }
 
 .who-feature-icon {
@@ -189,125 +230,46 @@
 
 .icon-hd {
     background: linear-gradient(135deg, #f44616 0%, #d83a0e 100%);
+    box-shadow: 0 4px 12px rgba(244, 70, 22, 0.35);
 }
 
 .icon-network {
     background: linear-gradient(135deg, #0284c7 0%, #0369a1 100%);
+    box-shadow: 0 4px 12px rgba(2, 132, 199, 0.35);
 }
 
 .icon-epg {
     background: linear-gradient(135deg, #8b5cf6 0%, #6d28d9 100%);
+    box-shadow: 0 4px 12px rgba(139, 92, 246, 0.35);
 }
 
 .icon-support {
     background: linear-gradient(135deg, #059669 0%, #047857 100%);
+    box-shadow: 0 4px 12px rgba(5, 150, 105, 0.35);
 }
 
-.who-feature-item h5 {
-    font-size: 13.5px;
+.who-feature-item h3 {
+    font-size: 14.5px;
     font-weight: 700;
-    color: #0f172a;
-    margin-bottom: 4px;
+    color: #ffffff;
+    margin-bottom: 3px;
     line-height: 1.25;
 }
 
 .who-feature-item p {
     font-size: 12px;
-    color: #64748b;
+    color: #94a3b8;
     margin: 0;
     line-height: 1.45;
-}
-
-/* Who We Are Visual Frame */
-.who-visual-showcase {
-    position: relative;
-    padding: 10px;
-}
-
-.who-media-frame {
-    position: relative;
-    border-radius: 24px;
-    overflow: hidden;
-    box-shadow: 0 16px 40px rgba(15, 23, 42, 0.12);
-    border: 1px solid #e2e8f0;
-    background: #0f172a;
-}
-
-.who-media-img {
-    width: 100%;
-    height: 380px;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.4s ease;
-}
-
-.who-media-frame:hover .who-media-img {
-    transform: scale(1.03);
-}
-
-.who-floating-pill {
-    position: absolute;
-    background: rgba(15, 23, 42, 0.88);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.15);
-    border-radius: 14px;
-    padding: 10px 14px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.25);
-    z-index: 2;
-    transition: transform 0.25s ease;
-}
-
-.who-floating-pill:hover {
-    transform: translateY(-2px);
-}
-
-.pill-top-right {
-    top: 20px;
-    right: 20px;
-}
-
-.pill-bottom-left {
-    bottom: 20px;
-    left: 20px;
-}
-
-.pill-icon-circle {
-    width: 32px;
-    height: 32px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 13px;
 }
 
 @media (max-width: 768px) {
     .who-feature-grid {
         grid-template-columns: 1fr;
     }
-
-    .who-media-img {
-        height: 280px;
-    }
-
-    .who-floating-pill {
-        padding: 8px 12px;
-    }
-
-    .pill-top-right {
-        top: 12px;
-        right: 12px;
-    }
-
-    .pill-bottom-left {
-        bottom: 12px;
-        left: 12px;
-    }
 }
+
+.about-image-frame {
     border-radius: 18px;
     overflow: hidden;
     box-shadow: 0 16px 36px rgba(0, 0, 0, 0.08);
