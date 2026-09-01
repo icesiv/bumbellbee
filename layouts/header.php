@@ -1,25 +1,29 @@
 <?php
+require_once __DIR__ . '/../includes/seo.php';
+
 $currentUri = parse_url($_SERVER['REQUEST_URI'] ?? '', PHP_URL_PATH);
 $currentScript = $_SERVER['SCRIPT_NAME'] ?? '';
 
-function isNavActive($pageKey, $currentUri, $currentScript) {
-    $trimmed = trim($currentUri, '/');
-    if ($pageKey === 'home') {
-        return ($trimmed === '' || $trimmed === 'home' || $trimmed === 'index.php');
+if (!function_exists('isNavActive')) {
+    function isNavActive($pageKey, $currentUri, $currentScript) {
+        $trimmed = trim($currentUri, '/');
+        if ($pageKey === 'home') {
+            return ($trimmed === '' || $trimmed === 'home' || $trimmed === 'index.php');
+        }
+        if ($pageKey === 'packages') {
+            return (strpos($trimmed, 'package') !== false);
+        }
+        if ($pageKey === 'payment') {
+            return (strpos($trimmed, 'payment') !== false);
+        }
+        if ($pageKey === 'about') {
+            return (strpos($trimmed, 'about') !== false);
+        }
+        if ($pageKey === 'contact') {
+            return (strpos($trimmed, 'contact') !== false);
+        }
+        return false;
     }
-    if ($pageKey === 'packages') {
-        return (strpos($trimmed, 'package') !== false);
-    }
-    if ($pageKey === 'payment') {
-        return (strpos($trimmed, 'payment') !== false);
-    }
-    if ($pageKey === 'about') {
-        return (strpos($trimmed, 'about') !== false);
-    }
-    if ($pageKey === 'contact') {
-        return (strpos($trimmed, 'contact') !== false);
-    }
-    return false;
 }
 ?>
 <!doctype html>
@@ -30,13 +34,13 @@ function isNavActive($pageKey, $currentUri, $currentScript) {
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
+<?php renderSeoHead($pageSeo ?? []); ?>
+
     <!-- CSS -->
     <link rel="stylesheet" href="./dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/home.css">
     <link rel="stylesheet" href="./dist/css/all.css"> <!-- Font Awesome -->
     <link rel="stylesheet" type="text/css" href="./dist/datatables.min.css" />
-
-    <title>Bumbellbee Ltd. - Digital HD Television &amp; Cable Network</title>
 </head>
 
 <body>

@@ -1,4 +1,8 @@
-<?php include "layouts/header.php"; ?>
+<?php 
+require_once __DIR__ . '/includes/seo.php';
+$pageSeo = getSeoConfig('about');
+include "layouts/header.php"; 
+?>
 
 <!-- Custom About Us Page Styles -->
 <link rel="stylesheet" href="./css/about.css">
@@ -46,7 +50,7 @@
                                 <i class="fas fa-tv"></i>
                             </div>
                             <div>
-                                <h5>1080p &amp; 4K HD Quality</h5>
+                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">1080p &amp; 4K HD Quality</h3>
                                 <p>Uncompressed digital feed with rich color fidelity and deep contrast.</p>
                             </div>
                         </div>
@@ -56,7 +60,7 @@
                                 <i class="fas fa-project-diagram"></i>
                             </div>
                             <div>
-                                <h5>Fiber-Optic Backbone</h5>
+                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Fiber-Optic Backbone</h3>
                                 <p>Weather-resilient digital transmission ensuring 99.9% uptime.</p>
                             </div>
                         </div>
@@ -66,7 +70,7 @@
                                 <i class="fas fa-list-alt"></i>
                             </div>
                             <div>
-                                <h5>Smart EPG Guide</h5>
+                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Smart EPG Guide</h3>
                                 <p>7-day electronic program guide with parental controls.</p>
                             </div>
                         </div>
@@ -76,7 +80,7 @@
                                 <i class="fas fa-headset"></i>
                             </div>
                             <div>
-                                <h5>Fast On-Site Support</h5>
+                                <h3 style="font-size: 15px; font-weight: 700; color: #0f172a; margin-bottom: 3px;">Fast On-Site Support</h3>
                                 <p>Prompt doorstep service from certified technicians during office hours.</p>
                             </div>
                         </div>
@@ -87,7 +91,7 @@
                 <div class="col-lg-6">
                     <div class="who-visual-showcase">
                         <div class="who-media-frame">
-                            <img src="./img/about_hero.jpg" alt="Bumbellbee Digital Entertainment System" class="who-media-img">
+                            <img src="./img/about_hero.jpg" alt="Bumbellbee Digital Entertainment System" class="who-media-img" loading="lazy" decoding="async">
                             
                             <!-- Floating Badge 1: Quality -->
                             <div class="who-floating-pill pill-top-right">
@@ -186,7 +190,7 @@
                     <div class="d-flex justify-content-between align-items-center flex-wrap mb-2">
                         <span class="section-tag">Visionary Leadership</span>
                         <a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer">
-                            <img src="./img/abg_logo.png" alt="ABG Bashundhara Logo" style="height: 44px; width: auto; object-fit: contain;" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
+                            <img src="./img/abg_logo.png" alt="ABG Bashundhara Logo" style="height: 44px; width: auto; object-fit: contain;" loading="lazy" decoding="async" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
                         </a>
                     </div>
                     <h2 class="section-title">Pioneering Progress and Economic Empowerment</h2>
@@ -214,7 +218,7 @@
                                 <i class="fas fa-user-tie"></i>
                             </div>
                             <div>
-                                <h4 class="leadership-name">Sayem Sobhan Anvir</h4>
+                                <h3 class="leadership-name" style="font-size: 16px; margin-bottom: 2px;">Sayem Sobhan Anvir</h3>
                                 <span class="leadership-title">Managing Director, Bashundhara Group</span>
                             </div>
                         </div>
@@ -226,19 +230,19 @@
         <!-- Section 5: Call to Action Banner -->
         <div class="about-cta-banner">
             <div class="about-cta-content">
-                <h3>Ready to Experience Premium HD Entertainment?</h3>
+                <h3 style="font-size: 22px; font-weight: 800; margin-bottom: 6px;">Ready to Experience Premium HD Entertainment?</h3>
                 <p>
                     Discover our flexible channel packages or explore instant payment options for seamless activation.
                 </p>
             </div>
             <div class="about-cta-buttons">
-                <a href="package.php" class="about-cta-btn-primary">
+                <a href="packages" class="about-cta-btn-primary">
                     <i class="fas fa-tv"></i> View Packages
                 </a>
-                <a href="payment.php" class="about-cta-btn-secondary">
+                <a href="payment" class="about-cta-btn-secondary">
                     <i class="fas fa-credit-card"></i> Payment Options
                 </a>
-                <a href="contactus.php" class="about-cta-btn-secondary">
+                <a href="contact-us" class="about-cta-btn-secondary">
                     <i class="fas fa-phone-alt"></i> Contact Support
                 </a>
             </div>

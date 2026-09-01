@@ -1,10 +1,27 @@
-<?php include 'layouts/header.php'; ?>
+<?php 
+require_once __DIR__ . '/includes/seo.php';
+$pageSeo = getSeoConfig('payment');
+include 'layouts/header.php'; 
+?>
 
 <!-- Custom Payment Page Styles -->
 <link rel="stylesheet" href="./css/payment.css">
 
 <div class="payment-page-wrapper">
     <div class="container">
+
+        <!-- Hero Header -->
+        <div class="payment-hero text-center mb-4">
+            <div class="badge-pill-custom">
+                <i class="fas fa-credit-card"></i> Instant Digital Bill Payment
+            </div>
+            <h1 style="font-size: 28px; font-weight: 800; color: #0f172a; margin-top: 10px; margin-bottom: 8px;">
+                Bumbellbee Payment Methods &amp; Bill Pay
+            </h1>
+            <p class="lead-text" style="max-width: 680px; margin: 0 auto 20px; color: #64748b; font-size: 15px;">
+                Settle your monthly cable television subscription quickly through bKash, Nagad, Pocket mobile wallet, or direct bank deposit for instant account activation.
+            </p>
+        </div>
 
         <!-- Navigation Filter Pills -->
         <div class="payment-nav-pills">
@@ -24,9 +41,9 @@
 
         <!-- 1. Mobile Banking Section -->
         <div class="payment-category-block" id="section-mfs">
-            <div class="method-section-title">
+            <h2 class="method-section-title">
                 <i class="fas fa-mobile-alt"></i> Mobile Banking (MFS)
-            </div>
+            </h2>
             <div class="row">
                 <!-- bKash Card -->
                 <div class="col-lg-4 col-md-6 mb-4">
@@ -165,9 +182,9 @@
 
         <!-- 2. Bank Transfer Section -->
         <div class="payment-category-block" id="section-bank">
-            <div class="method-section-title">
+            <h2 class="method-section-title">
                 <i class="fas fa-university"></i> Bank Transfer &amp; Deposit
-            </div>
+            </h2>
             <div class="row">
                 <!-- Southeast Bank -->
                 <div class="col-lg-6 col-md-6 mb-4">
@@ -273,9 +290,9 @@
 
         <!-- 4. Visual Step-by-Step Guides Section -->
         <div class="visual-guides-card payment-category-block" id="section-guides">
-            <div class="method-section-title">
+            <h2 class="method-section-title">
                 <i class="fas fa-images"></i> Visual Step-by-Step Payment Guides
-            </div>
+            </h2>
             <p style="color: #64748b; font-size: 14px; margin-bottom: 20px;">
                 Follow our pictorial guide to complete your payment smoothly on mobile banking apps.
             </p>
@@ -291,7 +308,7 @@
 
             <!-- bKash Preview -->
             <div id="guide-tab-bkash" class="guide-image-container">
-                <img src="./img/bkash_o.jpg" alt="bKash Payment Guide" class="guide-preview-img"
+                <img src="./img/bkash_o.jpg" alt="bKash Step-by-Step Payment Guide for Bumbellbee" class="guide-preview-img" loading="lazy" decoding="async"
                     onclick="openGuideModal('./img/bkash_o.jpg', 'bKash Payment Guide')">
                 <div class="zoom-hint">
                     <i class="fas fa-search-plus"></i> Click image to enlarge full screen
@@ -300,7 +317,7 @@
 
             <!-- Pocket Preview -->
             <div id="guide-tab-pocket" class="guide-image-container" style="display: none;">
-                <img src="./img/pocket.jpg" alt="Pocket Payment Guide" class="guide-preview-img"
+                <img src="./img/pocket.jpg" alt="Pocket Mobile Wallet Step-by-Step Payment Guide" class="guide-preview-img" loading="lazy" decoding="async"
                     onclick="openGuideModal('./img/pocket.jpg', 'Pocket Payment Guide')">
                 <div class="zoom-hint">
                     <i class="fas fa-search-plus"></i> Click image to enlarge full screen
@@ -335,7 +352,7 @@
 <div id="guideModal" class="guide-modal" onclick="closeGuideModal(event)">
     <div class="guide-modal-content" onclick="event.stopPropagation()">
         <button class="guide-modal-close" onclick="closeGuideModal()">&times;</button>
-        <img id="modalImg" src="" alt="Payment Guide" class="guide-modal-img">
+        <img id="modalImg" src="" alt="Payment Method Step-by-Step Guide Enlarged View" class="guide-modal-img">
     </div>
 </div>
 

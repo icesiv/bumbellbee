@@ -1,0 +1,12 @@
+# Robots.txt for Bumbellbee Ltd. (https://bumbellbee.com)
+User-agent: *
+Allow: /
+
+# Disallow internal configuration, datasets and backend scripts
+Disallow: /data/
+Disallow: /LocalValetDriver.php
+Disallow: /READMe.md
+Disallow: /*.json$
+
+# Canonical Sitemap Reference
+Sitemap: https://bumbellbee.com/sitemap.xml

@@ -1,4 +1,8 @@
-<?php include "layouts/header.php"; ?>
+<?php 
+require_once __DIR__ . '/includes/seo.php';
+$pageSeo = getSeoConfig('contact');
+include "layouts/header.php"; 
+?>
 
 <!-- Custom Contact Us Styles -->
 <link rel="stylesheet" href="./css/contact.css">
@@ -31,7 +35,7 @@
                             <span class="pulse-dot"></span> Sat – Thu: 9 AM – 6 PM
                         </span>
                     </div>
-                    <div class="channel-title">Customer Care Hotline</div>
+                    <h2 class="channel-title" style="font-size: 17px; font-weight: 700; color: #0f172a; margin-bottom: 6px;">Customer Care Hotline</h2>
                     <div class="channel-value">
                         <a href="tel:09678300700">09 678 300700</a>
                     </div>
@@ -50,7 +54,7 @@
                             <i class="far fa-envelope"></i>
                         </div>
                     </div>
-                    <div class="channel-title">Email Inquiries</div>
+                    <h2 class="channel-title" style="font-size: 17px; font-weight: 700; color: #0f172a; margin-bottom: 6px;">Email Inquiries</h2>
                     <div class="channel-value">
                         <a href="mailto:care@bumbellbee.com">care@bumbellbee.com</a>
                     </div>
@@ -64,9 +68,9 @@
             <div class="col-lg-4 col-md-12">
                 <div class="quick-channel-card">
                     <div class="channel-icon-header">
-                        <img src="./img/abg_logo.png" alt="Anvir Bashundhara Group" style="height: 38px; width: auto; object-fit: contain;" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
+                        <img src="./img/abg_logo.png" alt="Anvir Bashundhara Group Logo" style="height: 38px; width: auto; object-fit: contain;" loading="lazy" decoding="async" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
                     </div>
-                    <div class="channel-title">Anvir Bashundhara Group Concern</div>
+                    <h2 class="channel-title" style="font-size: 17px; font-weight: 700; color: #0f172a; margin-bottom: 6px;">Anvir Bashundhara Group Concern</h2>
                     <div class="channel-value" style="font-size: 14px; color: #0f172a;">
                         <a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer"
                             style="color:#f44616;">
@@ -85,9 +89,9 @@
             <!-- Left Column: Office & Map -->
             <div class="col-lg-5 mb-4 mb-lg-0">
                 <div class="contact-info-card">
-                    <h3 class="form-header-title">
+                    <h2 class="form-header-title">
                         <i class="fas fa-map-marker-alt text-danger"></i> Head Office
-                    </h3>
+                    </h2>
                     <p class="form-header-subtitle">Visit our corporate headquarters for direct inquiries.</p>
 
                     <div class="office-details-box">
@@ -109,7 +113,7 @@
                         <iframe
                             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.1557022067756!2d90.423142!3d23.812829!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755c64b7323cf8b%3A0xd112f3827062925d!2sBumbellbee%20Limited!5e0!3m2!1sen!2sbd!4v1700000000000!5m2!1sen!2sbd"
                             allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Bumbellbee Limited Location Map">
+                            title="Bumbellbee Limited Head Office Location Map">
                         </iframe>
                     </div>
                     <a href="https://maps.app.goo.gl/MdeSnddhrq7j9Tob9" target="_blank" rel="noopener noreferrer"
@@ -123,9 +127,9 @@
             <!-- Right Column: Interactive Contact Form -->
             <div class="col-lg-7">
                 <div class="contact-form-card">
-                    <h3 class="form-header-title">
+                    <h2 class="form-header-title">
                         <i class="fas fa-paper-plane text-danger"></i> Send Us a Message
-                    </h3>
+                    </h2>
                     <p class="form-header-subtitle">
                         Fill out the form below and our customer support team will get back to you promptly.
                     </p>

@@ -1,4 +1,8 @@
-<?php include "layouts/header.php"; ?>
+<?php 
+require_once __DIR__ . '/includes/seo.php';
+$pageSeo = getSeoConfig('packages');
+include "layouts/header.php"; 
+?>
 
 <!-- Custom Package & Channel Explorer Styles -->
 <link rel="stylesheet" href="./css/package.css">
@@ -112,7 +116,7 @@
         <div class="channel-explorer-card" id="channel-explorer">
             <div class="explorer-header">
                 <div class="explorer-title">
-                    <h3 id="currentPackTitle">Standard Package Channel Lineup</h3>
+                    <h2 id="currentPackTitle" style="font-size: 20px; font-weight: 800; color: #0f172a; margin-bottom: 4px;">Standard Package Channel Lineup</h2>
                     <p id="currentPackSubtitle">Browse all supported channels with official logos, SIDs, and categories.
                     </p>
                 </div>
@@ -391,7 +395,7 @@
 
             let logoHtml = '';
             if (logoUrl) {
-                logoHtml = `<img src="${logoUrl}" alt="${name}" class="channel-logo-img" loading="lazy" onerror="this.outerHTML='<div class=\\'channel-logo-fallback\\'>${initials}</div>'">`;
+                logoHtml = `<img src="${logoUrl}" alt="${name} Channel Logo" class="channel-logo-img" loading="lazy" decoding="async" onerror="this.outerHTML='<div class=\\'channel-logo-fallback\\'>${initials}</div>'">`;
             } else {
                 logoHtml = `<div class="channel-logo-fallback">${initials}</div>`;
             }
@@ -413,7 +417,7 @@
                 <td><strong style="color:#0f172a;">#${sid}</strong></td>
                 <td>
                     ${logoUrl ?
-                    `<img src="${logoUrl}" alt="${name}" class="table-channel-logo" loading="lazy" onerror="this.style.display='none'">` :
+                    `<img src="${logoUrl}" alt="${name} Channel Logo" class="table-channel-logo" loading="lazy" decoding="async" onerror="this.style.display='none'">` :
                     `<span class="badge badge-light border">${initials}</span>`}
                 </td>
                 <td><strong>${name}</strong></td>

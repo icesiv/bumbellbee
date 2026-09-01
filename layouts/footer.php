@@ -5,7 +5,7 @@
             <!-- Col 1: Brand & ABG Affiliation -->
             <div class="col-lg-4 col-md-6 mb-4 mb-lg-0 footer-brand-col">
                 <a href="home" class="d-inline-block">
-                    <img src="./img/logo.png" alt="Bumbellbee Ltd." class="footer-logo">
+                    <img src="./img/logo.png" alt="Bumbellbee Ltd. Logo" class="footer-logo" loading="lazy" decoding="async">
                 </a>
                 <p class="footer-brand-desc">
                     Delivering premium digital cable television broadcasting, crystal-clear 1080p/4K HD entertainment, and fiber-optic signal stability directly to your home.
@@ -13,7 +13,7 @@
 
                 <!-- ABG Bashundhara Concern Badge -->
                 <a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer" class="footer-abg-badge">
-                    <img src="./img/abg_logo.png" alt="Anvir Bashundhara Group" class="footer-abg-logo" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
+                    <img src="./img/abg_logo.png" alt="Anvir Bashundhara Group Logo" class="footer-abg-logo" loading="lazy" decoding="async" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
                     <div class="footer-abg-text">
                         <span class="footer-abg-label">A Sister Concern of</span>
                         <span class="footer-abg-name">Anvir Bashundhara Group</span>

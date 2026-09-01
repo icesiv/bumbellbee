@@ -43,6 +43,7 @@ class LocalValetDriver extends ValetDriver
             '/contact' => '/contactus.php',
             '/contacts' => '/contactus.php',
             '/contactus' => '/contactus.php',
+            '/sitemap.xml' => '/sitemap.php',
         ];
 
         $cleanUri = parse_url($uri, PHP_URL_PATH);

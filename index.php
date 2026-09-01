@@ -1,4 +1,8 @@
-<?php include "layouts/header.php"; ?>
+<?php 
+require_once __DIR__ . '/includes/seo.php';
+$pageSeo = getSeoConfig('home');
+include "layouts/header.php"; 
+?>
 
 <!-- 1. Modern Hero Section -->
 <section class="home-hero-section">
@@ -41,7 +45,7 @@
             <!-- Right Column: Visual Media Showcase -->
             <div class="col-lg-6">
                 <div class="hero-media-wrapper">
-                    <img src="./img/about_hero.jpg" alt="Bumbellbee 4K HD Living Room Entertainment" class="hero-media-img">
+                    <img src="./img/about_hero.jpg" alt="Bumbellbee 4K HD Living Room Entertainment" class="hero-media-img" fetchpriority="high" decoding="async">
                     <div class="hero-floating-badge">
                         <i class="fas fa-broadcast-tower"></i>
                         <div>
@@ -179,7 +183,7 @@
         <div class="backing-box">
             <div class="d-flex align-items-center flex-wrap">
                 <a href="https://www.abgbashundhara.com/" target="_blank" rel="noopener noreferrer" class="mr-3 mb-2 mb-sm-0">
-                    <img src="./img/abg_logo.png" alt="Anvir Bashundhara Group Logo" style="height: 52px; width: auto; object-fit: contain;" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
+                    <img src="./img/abg_logo.png" alt="Anvir Bashundhara Group Logo" style="height: 52px; width: auto; object-fit: contain;" loading="lazy" decoding="async" onerror="this.src='https://www.abgbashundhara.com/wp-content/uploads/2026/03/14.03-ABG-Full-3D-Final-Logo-scaled.png'">
                 </a>
                 <div class="backing-title">
                     <h4>A Sister Concern of Anvir Bashundhara Group</h4>

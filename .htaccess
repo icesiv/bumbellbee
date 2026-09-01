@@ -19,6 +19,7 @@
     RewriteRule ^ contact-us [R=301,L]
 
     # Friendly URL mappings
+    RewriteRule ^sitemap\.xml$ sitemap.php [L]
     RewriteRule ^home/?$ index.php [L,QSA]
     RewriteRule ^packages/?$ package.php [L,QSA]
     RewriteRule ^package/?$ package.php [L,QSA]
